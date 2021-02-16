@@ -3,7 +3,7 @@
 This project is about send the data from ADS1115 from PL section into PS section through AXI-DMA. Firstly, we create the I2C configuration for ADS1115 and then create AXI configuration that config the register of it. Finally, we pack the data to the master axi streaming interface and send it to memory through AXI-DMA. 
 
 # The example block design for using this core
-
+![Capture](https://user-images.githubusercontent.com/9088660/108102340-ffa28100-70ba-11eb-8688-6eec34448219.PNG)
 
 ## src
 There are 3 top modules here: i2c_top. axi_for_i2c and data_to_M_AXIS
