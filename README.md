@@ -11,7 +11,7 @@ There are 3 top modules here: i2c_top. axi_for_i2c and data_to_M_AXIS
 - axi_for_i2c.vhd is the module that config the pga (programmable gain amplifier) and dr (data rate) of the ADS1115. Moreover it use to send the start command. Note that the start command for this project is the rising edge which means if you want to start you need to turn off before turn on. 
 - data_to_M_AXIS is the module that send the address to BRAM for receive the data and send the data in AXI-streaming interface. 
 
-The i2c_master is reference from digikey. 
+The i2c_master.vhd is reference from digikey. 
 
 ## sdk 
 The C code that use to start the AXI DMA and also communication with the axi_for_i2c.vhd
