@@ -14,7 +14,7 @@ There are 3 top modules here: i2c_top. axi_for_i2c and data_to_M_AXIS
 The i2c_master.vhd is reference from digikey. 
 
 ## sdk 
-The C code that use to start the AXI DMA and also communication with the axi_for_i2c.vhd
+The C code that use to start the AXI DMA and also communication with the axi_for_i2c.vhd You can see that in the axi_for_i2c.vhd is provide for config the ADS1115 pga and dr. The pga and dr is stand for programmable gain amplifiers and data rate. The data rate is known as sampling rate which config for appropriate signal. To setting pga and dr, you need to write the AXI to the axi_for_i2c_bass_address + 0x08 and set bit 5 downto 3 is for pga and bit 8 downto 6 is for dr. 
 
 ## bd
 block design which is generate from "export block design" in vivado. Note that we did not test this file. 
